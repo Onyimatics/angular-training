@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'data-binding',
     loadChildren: () => import('./data-binding/data-binding.module').then(m => m.DataBindingModule)
+  },
+  {
+    path: 'todos',
+    loadChildren: () => import('./todos/todos.module').then(m => m.TodosModule)
   }
 ];
 

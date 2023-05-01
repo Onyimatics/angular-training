@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DataBindingComponent } from './data-binding.component';
-import {TodosComponent} from "./todos/todos.component";
-import {TodoDetailComponent} from "./todo-detail/todo-detail.component";
+import {TodosComponent} from "../todos/todos.component";
+import {TodoDetailComponent} from "../todos/todo-detail/todo-detail.component";
 
 const routes: Routes = [
   {
@@ -12,14 +12,6 @@ const routes: Routes = [
         path: '',
         component: DataBindingComponent
       },
-      {
-        path: 'todos',
-        component: TodosComponent
-      },
-      {
-        path: 'todos/:id',
-        component: TodoDetailComponent
-      }
     ]
   }
 ];
