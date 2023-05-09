@@ -15,7 +15,7 @@ export class TemplateDrivenComponent {
     password: 'password',
     firstName: 'Favour',
     lastName: 'Ezike',
-    dob: new Date()
+    dob: ''
   };
 
   onSubmit(form: NgForm) {

@@ -16,7 +16,7 @@ const routes: Routes = [
         component: TemplateDrivenComponent
       },
       {
-        path: 'model',
+        path: 'reactive',
         component: ModelDrivenComponent
       },
     ]

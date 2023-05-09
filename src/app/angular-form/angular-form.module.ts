@@ -5,7 +5,8 @@ import { AngularFormRoutingModule } from './angular-form-routing.module';
 import { AngularFormComponent } from './angular-form.component';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 import { ModelDrivenComponent } from './model-driven/model-driven.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {CalendarModule} from "primeng/calendar";
 
 
 @NgModule({
@@ -14,10 +15,12 @@ import {FormsModule} from "@angular/forms";
     TemplateDrivenComponent,
     ModelDrivenComponent
   ],
-    imports: [
-        CommonModule,
-        AngularFormRoutingModule,
-        FormsModule
-    ]
+  imports: [
+    CommonModule,
+    AngularFormRoutingModule,
+    FormsModule,
+    CalendarModule,
+    ReactiveFormsModule,
+  ]
 })
 export class AngularFormModule { }

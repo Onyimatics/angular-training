@@ -1,4 +1,12 @@
 <div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h4>Template Driven Form</h4>
+    </div>
+    <div class="col-sm-6">
+      <button type="button" routerLink="/form/reactive" class="btn btn-success pull-right">Go To Reactive Form</button>
+    </div>
+  </div>
   <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
     <div class="form-group">
       <label for="firstName">First Name</label>
@@ -18,7 +26,30 @@
     </div>
     <div class="form-group">
       <label for="dob">Date of Birth</label>
-      <input [(ngModel)]="user.dob" name="dob" required type="date" class="form-control" id="dob" placeholder="DOB">
+      <div class="ui-fluid">
+        <input
+          [(ngModel)]="user.dob"
+          name="dob"
+          class="form-control"
+          id="dob"
+          placeholder="DOB"
+          type="date"
+          required
+        >
+      </div>
+<!--      <p-calendar-->
+<!--        [(ngModel)]="user.dob"-->
+<!--        [monthNavigator]='true'-->
+<!--        [showIcon]='true'-->
+<!--        [style]="{ width: '100%' }"-->
+<!--        [yearNavigator]='true'-->
+<!--        dataType="'string'"-->
+<!--        dateFormat='yy-mm-dd'-->
+<!--        name="dob"-->
+<!--        class="form-control"-->
+<!--        id="dob"-->
+<!--        placeholder="DOB"-->
+<!--      ></p-calendar>-->
     </div>
     <button type="submit" class="btn btn-primary" [disabled]="!myForm.valid">Submit</button>
   </form>
