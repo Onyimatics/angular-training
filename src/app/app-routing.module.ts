@@ -14,7 +14,8 @@ const routes: Routes = [
   {
     path: 'todos',
     loadChildren: () => import('./todos/todos.module').then(m => m.TodosModule)
-  }
+  },
+  { path: 'form', loadChildren: () => import('./angular-form/angular-form.module').then(m => m.AngularFormModule) }
 ];
 
 @NgModule({

@@ -67,7 +67,7 @@ export class TodosComponent implements OnInit, OnDestroy {
         completed: todo.completed
       }
     })
-      .then((error) => console.log(error));
+      .then((res) => console.log(res));
   }
 
   addTodo(newTodoTitle: string) {
@@ -79,6 +79,7 @@ export class TodosComponent implements OnInit, OnDestroy {
           title: newTodoTitle,
           completed: true,
         }
+        // Use push initially
         todos.unshift(newTodoObj);
         this.todos = todos;
         console.log('todos...', this.todos)

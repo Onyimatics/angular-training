@@ -3,6 +3,7 @@
 
 <div class="form-group">
   <label for="todo-input">Add a Todo: </label>
+<!--  A Template reference variable is a reference to a DOM element within a template-->
   <input type="text" id="todo-input" #newTodo>
   <button class="btn btn-primary" (click)="addNewTodo(newTodo.value)">Add Todo</button>
 </div>
